@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <title>RoboSec: On the Security of Industrial Robots</title>
+    <meta name="author" content="Davide Quarta, Marcello Pogliani, Mario Polino, Federico Maggi, Andrea Maria Zanchettin, and Stefano Zanero">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="static/bootstrap.min.css">
+    <link rel="stylesheet" href="static/custom.cs">
+  </head>
+
+  <body>
+    <div class="container" style="max-width: 900px;">
+      <div class="row">
+        <div>
+
+          <div style="text-align: center">
+              <h1>RoboSec</h1>
+              <h2>On the Security of Industrial Robots</h2> 
+              <p>A joint research project between Politecnico di Milano and Trend Micro</p>
+          </div>
+
+            <nav class="text-center text-large">
+              <a href="#Members">Who we are</a> ·
+              <a href="#Publications">Publications and Talks</a> ·
+              <a href="#Press">Press</a> ·
+              <a href="mailto:info@robosec.org">Contact us</a>
+            </nav>
+
+          <div class="row">
+            <hr class="four columns offset-by-four" />
+          </div>
+
+          <div class="text-large text-justify">
+
+          <p>Industrial robots are complex cyber-physical systems used for manufacturing,
+          and a critical component of any modern factory. These robots aren't just electromechanical devices but include complex embedded controllers, which are often interconnected with other computers in the factory network, safety systems, and to the Internet for remote monitoring and maintenance. In this scenario, industrial routers also play a key role, because they directly expose the robot's controller. Therefore, <strong>the impact of a single, simple vulnerability can grant attackers an easy entry point</strong>.</p>
+
+          <h4 class="text-center">Ok, but what's the impact of a compromised robot?</h4>
+
+          <p>Industrial robots must follow three fundamental laws: accurately "read" from the physical world through sensors and "write" (i.e. perform actions) through actuators, refuse to execute self-damaging control logic, and most importantly, echoing Asimov, never harm humans. By combining a set of vulnerabilities we discovered on a real robot, we demonstrated how remote attackers are able to violate such fundamental laws up to the point where they can alter the manufactured product, physically damage the robot, steal industry secrets, or injure humans.</p>
+
+          <p>In the following video, we show an attack we demonstrated in our laboratory on a real industrial robot - that, due to the architectural commonalities of most modern robots, and due to the existence of strict standards, is representative of a large class of robots.</p>
+	
+		  <div style="margin: 1em auto; max-width: 854px;">
+		  	<iframe width="854" height="480" src="https://www.youtube.com/embed/ufLyfUnzZRY" frameborder="0" allowfullscreen></iframe>
+		  </div>
+			
+          <div class="text-center">
+          	<h4 class="text-center">Want to know more?</h4>
+            <a class="button button-primary" href="https://www.trendmicro.com/vinfo/us/security/news/internet-of-things/rogue-robots-testing-industrial-robot-security">Take a look to the full Trend Micro report!</a>
+          </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- <div id="FAQs" class="row">
+        <div class="tweleve columns">
+          <h2>Frequently Asked Questions</h2>
+          <dl>
+            <dt></dt>
+            <dd></dd>
+          <p class="text-center">
+            <a class="button button-primary" href="mailto:info@robosec.org">Submit a Question</a>
+          </p>
+        </div>
+      </div> -->
+
+      <div id="Members" class="row">
+        <div class="tweleve columns">
+          <h2>Who we are</h2>
+
+          <p>This research is the outcome of a joint effort between researchers at <b>Politecnico di Milano</b>, and <b>Trend Micro Inc.</b> Main contributors:</p>
+
+          <dl>
+            <dt>Davide Quarta, <a href="https://twitter.com/_ocean">@_ocean</a></dt>
+            <dd>Ph.D. student, Politecnico di Milano</dd>
+
+            <dt>Marcello Pogliani, <a href="https://twitter.com/mapogli">@mapogli</a></dt>
+            <dd>Ph.D. student, Politecnico di Milano</dd>
+
+            <dt>Mario Polino, <a href="https://twitter.com/JinBlackx">@JinBlackx</a></dt>
+            <dd>Postdoctoral researcher, Politecnico di Milano</dd>
+
+            <dt><a href="https://maggi.cc" target="_blank">Federico Maggi</a>, <a href="https://twitter.com/phretor">@phretor</a></dt>
+            <dd>Senior Threat Researcher, Trend Micro Forward-Looking Threat Research</dd>
+
+            <dt><a href="https://home.deib.polimi.it/zanchettin" target="_blank">Andrea Maria Zanchettin</a>, <a href="https://twitter.com/zanchettin83">@zanchettin83</a></dt>
+            <dd>Assistant Professor, Politecnico di Milano</dd>
+
+            <dt><a href="https://home.deib.polimi.it/zanero/eng/index.html" target="_blank">Stefano Zanero</a>, <a href="https://twitter.com/raistolo">@raistolo</a></dt>
+            <dd>Associate Professor, Politecnico di Milano</dd>
+          </dl>
+
+        </div>
+      </div>
+
+      <div id="Publications" class="row">
+        <div class="tweleve columns">
+          <h2>Publications and Talks</h2>
+
+		  <p>Federico Maggi, Davide Quarta, Marcello Pogliani,
+		  Mario Polino, Andrea Maria Zanchettin, and Stefano Zanero.
+		  <a href="https://documents.trendmicro.com/assets/wp/wp-industrial-robot-security.pdf" target="_blank">
+		  Rogue Robots: Testing the Limits of an Industrial Robot’s Security</a>.
+		  TrendLabs Research Paper, May 2017.</p>
+
+		  <p>Davide Quarta, Marcello Pogliani, Mario Polino,
+		  Federico Maggi, Andrea Maria Zanchettin, and Stefano Zanero.
+		  <em>An Experimental Security Analysis of an Industrial Robot Controller</em>.
+		  38th IEEE Symposium on Security and Privacy, San José, CA, June 2017.</p>
+
+		  <p>Davide Quarta, Marcello Pogliani, Mario Polino,
+		  Federico Maggi, Andrea Maria Zanchettin, and Stefano Zanero.
+		  <a href="https://www.blackhat.com/us-17/briefings.html#breaking-the-laws-of-robotics-attacking-industrial-robots">
+		  Blackhat USA 2017</a>, Las Vegas, NV, 22-27 July 2017.</p>
+        </div>
+      </div>
+
+      <div id="Press" class="row">
+        <div class="tweleve columns">
+          <h2>Press Coverage</h2>
+          <p>Articles covering our work (in reverse chronological order):</p>
+          <ul>
+          	<li>WIRED, May 3rd, 2017: <a href="https://www.wired.com/2017/05/watch-hackers-sabotage-factory-robot-arm-afar/">Watch Hackers Sabotage an Industrial Robot Arm</a></li>
+          	<li>Motherboard, May 3rd, 2017: <a href="https://motherboard.vice.com/en_us/article/hackers-are-remotely-controlling-industrial-robots-now">Hackers Are Remotely Controlling Industrial Robots Now</a></li>
+          	<li>Help Net Security, May 3rd, 2017: <a href="https://www.helpnetsecurity.com/2017/05/03/hacking-industrial-robots/">Hacking industrial robots in today’s smart factories</a></li>
+          	<li>DARKReading, May 3rd, 2017: <a href="http://www.darkreading.com/vulnerabilities---threats/researchers-hack-industrial-robot-/d/d-id/1328790?_mc=RSS_DR_EDT">Researchers Hack Industrial Robot</a></li>
+          	<li>Forbes CyberSecurity, May 3rd, 2017: <a href="https://www.forbes.com/sites/thomasbrewster/2017/05/03/researchers-hack-industrial-robot-making-a-drone-rotor/#70ceaacc5d40">Watch An Industrial Robot Get Hacked, Ruining A 3D-Printed Drone</a></li>
+          </ul>
+
+          <p><strong>Want to write about this research?</strong> <a
+              href="https://www.trendmicro.com/vinfo/us/security/news/internet-of-things/rogue-robots-testing-industrial-robot-security">best starting point is the Trend Micro report</a>.</p>
+        </div>
+      </div>
+
+      <footer class="row text-center text-pale">
+        <div class="tweleve columns">
+          <hr />
+          <p>&copy;2017 all rights are reserved to the respective authors.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
