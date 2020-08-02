@@ -38,11 +38,11 @@
           </div>
 
             <nav class="text-center text-large">
-              <a href="#FAQ">FAQ</a> &bullet; 
               <a href="#Members">Who we are</a> &bullet; 
               <a href="#Publications">Academic Publications</a> &bullet; 
               <a href="#Whitepapers">Technical Whitepapers</a> &bullet; 
               <a href="#Talks">Talks</a> &bullet; 
+              <a href="#FAQ">FAQ</a> &bullet; 
               <a href="#Press">Press</a> &bullet; 
               <a href="mailto:info@robosec.org">Contact us</a>
             </nav>
@@ -88,40 +88,6 @@
             </div>
 
           </div>
-        </div>
-      </div>
-
-      <div id="FAQ" class="row">
-        <div class="tweleve columns">
-          <h2>FAQ</h2>
-          <dl>
-              <dt>What is the impact of the Human-Robot Interaction attack?</dt>
-              <dd>After follow up with ABB Robotics, we want to stress that safeguards are in place to prevent that a potential security issue can cause a safety issue. In particular, ABB Robotics let us know the following:
-              <br/>&quot;The operational mode displayed at the teach pendant is for information only and is not part of the safety system.
-              Entering the safeguarded space in automatic mode will always lead to a protective stop regardless of the status information
-              on the FlexPendant since there are mandatory regulations requiring that the safeguarded space shall be established by
-              perimeter guarding. The safety system that implements safety functions is in accordance with EN ISO 10218-1:2011 and
-              has been evaluated according to EN ISO 13849-1:2008
-              &lsquo;Safety of machinery - Safety-related parts of control systems - Part 1: General principles for design&lsquo;.
-              As required by EN ISO 10218-1:2011, the safety functions achieve performance level d and category 3.&quot;
-              </br> Unfortunately, a survey among robot users revealed that not all of the deployments actually adhere
-              the regulations and standards, due to user choices. Therefore, the fact that we were able to easily
-              conduct this attack on a non-compliant deployment reinforces the paramount importance of compliant deployment,
-              as opposed to simply trusting what's displayed on the teach pendant screen.</dd>
-              <dt>Have the specific vulnerabilities found in ABB's RobotWare been fixed?</dt>
-              <dd>Yes, the specific software vulnerabilities that we discovered in ABB's
-              RobotWare and we mention in our report have been fixed immediately after they have been
-              reported in late 2016 (see the <a href="http://search.abb.com/library/Download.aspx?DocumentID=SI20107&LanguageCode=en&DocumentPartId=&Action=Launch">security advisory</a>
-              on ABB's website). We acknowledge that ABB has been extremely fast in fixing them and
-              supportive of our work: it has been a pleasure for us working with
-              them.</dd>
-              <dt>I want to write about this, where can I find more info?</dt>
-              <dd>Trend Micro's <a href="https://www.trendmicro.com/vinfo/us/security/news/internet-of-things/rogue-robots-testing-industrial-robot-security">report</a> is a good place to start. Our S&amp;P <a href="downloads/paper-robosec-sp-2017.pdf">paper</a> can give some more insight and technical informations about the generic attacks we discovered. Also, feel free to <a href="mailto:info@robosec.org">contact us</a>!</dd>
-              <dt>Are there 80.000+ robots <emph>directly</emph> exposed to the internet? </dt>
-              <dd><b>No.</b> There are more than 80.000 industrial
-              <b>routers</b> directly connected to the internet. Most Internet-connected
-              industrial devices, such as industrial robots, can be found behind those routers.</dd>
-          </dl>
         </div>
       </div>
 
@@ -252,6 +218,40 @@
 
         </div>
     </div>
+
+    <div id="FAQ" class="row">
+        <div class="tweleve columns">
+          <h2>FAQ</h2>
+          <dl>
+              <dt>What is the impact of the Human-Robot Interaction attack?</dt>
+              <dd>After follow up with ABB Robotics, we want to stress that safeguards are in place to prevent that a potential security issue can cause a safety issue. In particular, ABB Robotics let us know the following:
+              <br/>&quot;The operational mode displayed at the teach pendant is for information only and is not part of the safety system.
+              Entering the safeguarded space in automatic mode will always lead to a protective stop regardless of the status information
+              on the FlexPendant since there are mandatory regulations requiring that the safeguarded space shall be established by
+              perimeter guarding. The safety system that implements safety functions is in accordance with EN ISO 10218-1:2011 and
+              has been evaluated according to EN ISO 13849-1:2008
+              &lsquo;Safety of machinery - Safety-related parts of control systems - Part 1: General principles for design&lsquo;.
+              As required by EN ISO 10218-1:2011, the safety functions achieve performance level d and category 3.&quot;
+              </br> Unfortunately, a survey among robot users revealed that not all of the deployments actually adhere
+              the regulations and standards, due to user choices. Therefore, the fact that we were able to easily
+              conduct this attack on a non-compliant deployment reinforces the paramount importance of compliant deployment,
+              as opposed to simply trusting what's displayed on the teach pendant screen.</dd>
+              <dt>Have the specific vulnerabilities found in ABB's RobotWare been fixed?</dt>
+              <dd>Yes, the specific software vulnerabilities that we discovered in ABB's
+              RobotWare and we mention in our report have been fixed immediately after they have been
+              reported in late 2016 (see the <a href="http://search.abb.com/library/Download.aspx?DocumentID=SI20107&LanguageCode=en&DocumentPartId=&Action=Launch">security advisory</a>
+              on ABB's website). We acknowledge that ABB has been extremely fast in fixing them and
+              supportive of our work: it has been a pleasure for us working with
+              them.</dd>
+              <dt>I want to write about this, where can I find more info?</dt>
+              <dd>Trend Micro's <a href="https://www.trendmicro.com/vinfo/us/security/news/internet-of-things/rogue-robots-testing-industrial-robot-security">report</a> is a good place to start. Our S&amp;P <a href="downloads/paper-robosec-sp-2017.pdf">paper</a> can give some more insight and technical informations about the generic attacks we discovered. Also, feel free to <a href="mailto:info@robosec.org">contact us</a>!</dd>
+              <dt>Are there 80.000+ robots <emph>directly</emph> exposed to the internet? </dt>
+              <dd><b>No.</b> There are more than 80.000 industrial
+              <b>routers</b> directly connected to the internet. Most Internet-connected
+              industrial devices, such as industrial robots, can be found behind those routers.</dd>
+          </dl>
+        </div>
+      </div>
 
 
       <div id="Press" class="row">
